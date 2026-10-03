@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="brickGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E17055"/>
+      <stop offset="50%" stop-color="#D63031"/>
+      <stop offset="100%" stop-color="#B71540"/>
+    </linearGradient>
+    <linearGradient id="mortarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#636E72"/>
+      <stop offset="100%" stop-color="#2D3436"/>
+    </linearGradient>
+    <filter id="brickShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Wall Outer Container -->
+  <rect x="8" y="12" width="84" height="76" rx="8" fill="url(#mortarGrad)" filter="url(#brickShadow)"/>
+
+  <!-- Row 1 Bricks -->
+  <rect x="12" y="16" width="36" height="20" rx="3" fill="url(#brickGrad)"/>
+  <rect x="12" y="16" width="36" height="3" rx="1" fill="#FFA5A5" opacity="0.5"/>
+  <rect x="52" y="16" width="36" height="20" rx="3" fill="url(#brickGrad)"/>
+  <rect x="52" y="16" width="36" height="3" rx="1" fill="#FFA5A5" opacity="0.5"/>
+
+  <!-- Row 2 Bricks (Interlocking) -->
+  <rect x="12" y="40" width="16" height="20" rx="3" fill="url(#brickGrad)"/>
+  <rect x="12" y="40" width="16" height="3" rx="1" fill="#FFA5A5" opacity="0.5"/>
+  <rect x="32" y="40" width="36" height="20" rx="3" fill="url(#brickGrad)"/>
+  <rect x="32" y="40" width="36" height="3" rx="1" fill="#FFA5A5" opacity="0.5"/>
+  <rect x="72" y="40" width="16" height="20" rx="3" fill="url(#brickGrad)"/>
+  <rect x="72" y="40" width="16" height="3" rx="1" fill="#FFA5A5" opacity="0.5"/>
+
+  <!-- Row 3 Bricks -->
+  <rect x="12" y="64" width="36" height="20" rx="3" fill="url(#brickGrad)"/>
+  <rect x="12" y="64" width="36" height="3" rx="1" fill="#FFA5A5" opacity="0.5"/>
+  <rect x="52" y="64" width="36" height="20" rx="3" fill="url(#brickGrad)"/>
+  <rect x="52" y="64" width="36" height="3" rx="1" fill="#FFA5A5" opacity="0.5"/>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tigerBody" cx="50%" cy="50%" r="55%" fx="40%" fy="30%">
+      <stop offset="0%" stop-color="#FF9F43"/>
+      <stop offset="70%" stop-color="#EE5253"/>
+      <stop offset="100%" stop-color="#C0392B"/>
+    </radialGradient>
+    <linearGradient id="tigerEarInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA7"/>
+      <stop offset="100%" stop-color="#FDCB6E"/>
+    </linearGradient>
+    <filter id="tigerShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Tiger Ears -->
+  <circle cx="24" cy="28" r="14" fill="#EE5253" filter="url(#tigerShadow)"/>
+  <circle cx="24" cy="28" r="8" fill="url(#tigerEarInner)"/>
+
+  <circle cx="76" cy="28" r="14" fill="#EE5253" filter="url(#tigerShadow)"/>
+  <circle cx="76" cy="28" r="8" fill="url(#tigerEarInner)"/>
+
+  <!-- Head Base -->
+  <ellipse cx="50" cy="55" rx="39" ry="34" fill="url(#tigerBody)" filter="url(#tigerShadow)"/>
+
+  <!-- Forehead Tiger Stripes -->
+  <polygon points="50,26 47,38 53,38" fill="#222F3E"/>
+  <polygon points="36,30 42,37 38,40" fill="#222F3E"/>
+  <polygon points="64,30 58,37 62,40" fill="#222F3E"/>
+
+  <!-- Side Stripes -->
+  <polygon points="12,50 24,53 20,57" fill="#222F3E"/>
+  <polygon points="14,60 25,62 22,66" fill="#222F3E"/>
+  <polygon points="88,50 76,53 80,57" fill="#222F3E"/>
+  <polygon points="86,60 75,62 78,66" fill="#222F3E"/>
+
+  <!-- White Muzzle -->
+  <ellipse cx="50" cy="67" rx="20" ry="15" fill="#FFFFFF"/>
+
+  <!-- Tiger Eyes (Fierce yet friendly amber) -->
+  <ellipse cx="36" cy="49" rx="8.5" ry="10" fill="#F1C40F"/>
+  <ellipse cx="64" cy="49" rx="8.5" ry="10" fill="#F1C40F"/>
+
+  <!-- Slit Pupils -->
+  <ellipse cx="36" cy="49" rx="3.5" ry="8" fill="#1E272E"/>
+  <ellipse cx="64" cy="49" rx="3.5" ry="8" fill="#1E272E"/>
+
+  <!-- Eye Highlights -->
+  <circle cx="34" cy="46" r="2.5" fill="#FFFFFF"/>
+  <circle cx="62" cy="46" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Nose -->
+  <polygon points="45,60 55,60 50,66" fill="#2C3E50"/>
+
+  <!-- Mouth and Fangs -->
+  <path d="M 43 66 Q 50 71 50 67 Q 50 71 57 66" fill="none" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="44,68 46,73 48,68" fill="#FFFFFF" stroke="#2C3E50" stroke-width="0.8"/>
+  <polygon points="52,68 54,73 56,68" fill="#FFFFFF" stroke="#2C3E50" stroke-width="0.8"/>
+
+  <!-- Whiskers -->
+  <line x1="22" y1="67" x2="6" y2="64" stroke="#2C3E50" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="20" y1="73" x2="5" y2="76" stroke="#2C3E50" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="78" y1="67" x2="94" y2="64" stroke="#2C3E50" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="80" y1="73" x2="95" y2="76" stroke="#2C3E50" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

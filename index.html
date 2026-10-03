@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐱 Save The Kitten — Tactical Defensive Puzzle Game</title>
+    <meta name="description" content="A single-player educational defensive puzzle game where the Kitten starts under attack and must respond by Moving, Blocking, or Capturing unsupported attackers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/kitten.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Ambient Background Lighting -->
+    <div class="app-background" aria-hidden="true">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <div class="game-wrapper">
+        <!-- Top Navigation Header -->
+        <header id="topBarContainer" class="game-header" role="banner"></header>
+
+        <!-- Main Game Layout -->
+        <main class="game-main-layout">
+            <!-- Center Board & Action Area -->
+            <section class="board-section" aria-label="Game Board and Actions">
+                <div id="boardContainer" class="board-container-holder"></div>
+                
+                <!-- Primary Action Mode Buttons: [ MOVE ], [ BLOCK ], and [ CAPTURE ] -->
+                <div id="actionButtonsContainer" class="action-buttons-holder"></div>
+            </section>
+
+            <!-- Status & Educational Sidebar -->
+            <aside class="sidebar-section" aria-label="Puzzle Status & Instructions">
+                <div id="statusContainer" class="status-container-holder"></div>
+            </aside>
+        </main>
+
+        <!-- Bottom Controls Footer -->
+        <footer id="controlsContainer" class="game-footer" role="contentinfo"></footer>
+    </div>
+
+    <!-- Application Script Entry Point -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

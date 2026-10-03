@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <radialGradient id="horseBody" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#D35400"/>
+      <stop offset="70%" stop-color="#A04000"/>
+      <stop offset="100%" stop-color="#6E2C00"/>
+    </radialGradient>
+    <linearGradient id="horseMane" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3E2723"/>
+      <stop offset="100%" stop-color="#1B0000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mane -->
+  <path d="M 38 18 C 30 28, 26 48, 30 68 C 24 54, 26 32, 36 20 Z" fill="url(#horseMane)"/>
+
+  <!-- Horse Head -->
+  <path d="M 44 20 Q 56 16 62 26 L 68 44 Q 74 56 68 66 L 54 74 Q 44 76 40 68 L 38 36 Z" fill="url(#horseBody)"/>
+
+  <!-- Ears -->
+  <polygon points="46,20 48,8 54,18" fill="url(#horseBody)"/>
+  <polygon points="56,20 60,10 64,22" fill="url(#horseBody)"/>
+
+  <!-- Eye -->
+  <circle cx="52" cy="36" r="4.5" fill="#FFFFFF"/>
+  <circle cx="53" cy="36" r="2.5" fill="#1E272E"/>
+  <circle cx="54" cy="35" r="1" fill="#FFFFFF"/>
+
+  <!-- Muzzle & Nostril -->
+  <ellipse cx="64" cy="66" rx="6" ry="7" fill="#873600"/>
+  <circle cx="65" cy="65" r="2" fill="#1E272E"/>
+</svg>

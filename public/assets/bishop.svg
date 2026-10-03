@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bishopGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#747D8C"/>
+      <stop offset="70%" stop-color="#2F3542"/>
+      <stop offset="100%" stop-color="#1E272E"/>
+    </radialGradient>
+    <filter id="bishopShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Base -->
+  <ellipse cx="50" cy="85" rx="34" ry="8" fill="url(#bishopGrad)" filter="url(#bishopShadow)"/>
+  <path d="M 26 85 L 32 74 L 68 74 L 74 85 Z" fill="url(#bishopGrad)"/>
+
+  <!-- Lower Ring -->
+  <ellipse cx="50" cy="73" rx="22" ry="4" fill="#57606F"/>
+
+  <!-- Body -->
+  <path d="M 34 72 C 38 55, 42 46, 40 40 L 60 40 C 58 46, 62 55, 66 72 Z" fill="url(#bishopGrad)"/>
+
+  <!-- Collar -->
+  <ellipse cx="50" cy="40" rx="18" ry="3.5" fill="#57606F"/>
+
+  <!-- Mitre Head -->
+  <path d="M 36 38 C 34 26, 44 14, 50 12 C 56 14, 66 26, 64 38 Z" fill="url(#bishopGrad)" filter="url(#bishopShadow)"/>
+
+  <!-- Mitre Cut / Slit -->
+  <path d="M 44 22 L 56 32" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Top Cross / Ball -->
+  <circle cx="50" cy="10" r="3.5" fill="#F1C40F"/>
+</svg>

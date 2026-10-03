@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <radialGradient id="wolfBody" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#718093"/>
+      <stop offset="70%" stop-color="#485460"/>
+      <stop offset="100%" stop-color="#2F3640"/>
+    </radialGradient>
+    <linearGradient id="wolfEar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A4B0BE"/>
+      <stop offset="100%" stop-color="#57606F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wolf Ears -->
+  <polygon points="22,38 28,12 44,28" fill="url(#wolfEar)"/>
+  <polygon points="78,38 72,12 56,28" fill="url(#wolfEar)"/>
+
+  <!-- Head Base -->
+  <polygon points="50,88 18,48 24,32 50,42 76,32 82,48" fill="url(#wolfBody)"/>
+
+  <!-- White Cheek Fluff -->
+  <polygon points="50,85 24,54 36,54" fill="#DCDDE1"/>
+  <polygon points="50,85 76,54 64,54" fill="#DCDDE1"/>
+
+  <!-- Glowing Yellow Eyes -->
+  <polygon points="34,44 44,48 38,52" fill="#F1C40F"/>
+  <circle cx="39" cy="48" r="2" fill="#1E272E"/>
+
+  <polygon points="66,44 56,48 62,52" fill="#F1C40F"/>
+  <circle cx="61" cy="48" r="2" fill="#1E272E"/>
+
+  <!-- Snout & Nose -->
+  <ellipse cx="50" cy="74" rx="6" ry="4" fill="#1E272E"/>
+  <path d="M 47 78 Q 50 82 53 78" stroke="#1E272E" stroke-width="2" fill="none"/>
+</svg>

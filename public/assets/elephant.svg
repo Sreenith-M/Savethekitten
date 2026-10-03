@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <radialGradient id="elephantBody" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#95A5A6"/>
+      <stop offset="70%" stop-color="#7F8C8D"/>
+      <stop offset="100%" stop-color="#34495E"/>
+    </radialGradient>
+    <radialGradient id="elephantEar" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#BDC3C7"/>
+      <stop offset="100%" stop-color="#7F8C8D"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Big Elephant Ears -->
+  <ellipse cx="22" cy="46" rx="16" ry="22" fill="url(#elephantEar)"/>
+  <ellipse cx="78" cy="46" rx="16" ry="22" fill="url(#elephantEar)"/>
+
+  <!-- Head -->
+  <circle cx="50" cy="48" r="28" fill="url(#elephantBody)"/>
+
+  <!-- Eyes -->
+  <circle cx="38" cy="42" r="4.5" fill="#FFFFFF"/>
+  <circle cx="39" cy="42" r="2.5" fill="#1E272E"/>
+
+  <circle cx="62" cy="42" r="4.5" fill="#FFFFFF"/>
+  <circle cx="61" cy="42" r="2.5" fill="#1E272E"/>
+
+  <!-- Trunk -->
+  <path d="M 46 54 C 46 68, 38 78, 48 84 C 55 84, 56 74, 54 54 Z" fill="url(#elephantBody)"/>
+
+  <!-- White Tusks -->
+  <path d="M 38 58 Q 32 68 28 66 Q 34 62 42 56 Z" fill="#FFFFFF"/>
+  <path d="M 62 58 Q 68 68 72 66 Q 66 62 58 56 Z" fill="#FFFFFF"/>
+</svg>
