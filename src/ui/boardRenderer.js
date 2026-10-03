@@ -10,6 +10,10 @@ import { PIECE_TYPES, PIECE_METADATA } from '../engine/pieces.js';
 import { GAME_MODES } from '../game/gameState.js';
 import { getCheckLine } from '../engine/blocking.js';
 
+const BASE_URL = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.BASE_URL)
+    ? (import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`)
+    : './';
+
 export class BoardRenderer {
     /**
      * @param {HTMLElement} container
@@ -122,7 +126,7 @@ export class BoardRenderer {
             if (board.hasBrick(coord)) {
                 squareEl.classList.add('has-brick');
                 const brickImg = document.createElement('img');
-                brickImg.src = 'assets/brick.svg';
+                brickImg.src = `${BASE_URL}assets/brick.svg`;
                 brickImg.className = 'piece-icon brick-icon';
                 brickImg.alt = 'Brick Block';
                 contentEl.appendChild(brickImg);
@@ -192,7 +196,7 @@ export class BoardRenderer {
         el.className = 'entity-avatar-holder kitten-avatar-holder';
 
         const img = document.createElement('img');
-        img.src = 'assets/kitten.svg';
+        img.src = `${BASE_URL}assets/kitten.svg`;
         img.className = 'piece-img';
         img.alt = 'Kitten';
 
@@ -210,7 +214,7 @@ export class BoardRenderer {
         el.className = `entity-avatar-holder attacker-avatar-holder type-${attacker.type}`;
 
         const img = document.createElement('img');
-        img.src = `assets/${attacker.type}.svg`;
+        img.src = `${BASE_URL}assets/${attacker.type}.svg`;
         img.className = 'piece-img';
         img.alt = attacker.type;
 

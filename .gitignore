@@ -1,6 +1,19 @@
+# Dependencies
 node_modules/
+
+# Production Build Output
 dist/
 dist-ssr/
-*.local
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# OS & Editor Files
 .DS_Store
+Thumbs.db
+*.local
 *.log
+.vscode/
+.idea/

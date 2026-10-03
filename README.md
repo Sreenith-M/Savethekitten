@@ -7,7 +7,7 @@
 
 > **A single-player educational defensive puzzle game** where the **Kitten** starts every level **⚠️ UNDER ATTACK** by static opponent pieces and must respond by either **MOVING** to a safe adjacent square, **BLOCKING** the line of attack with a protective brick (`🧱`), or **CAPTURING** an adjacent unsupported enemy piece (`⚔️`).
 
-🌐 **Live Demo on GitHub Pages**: [https://Sreenith-M.github.io/Savethekitten/](https://sreenith-m.github.io/Savethekitten/)
+🌐 **Live Demo on GitHub Pages**: [https://sreenith-m.github.io/Savethekitten/](https://sreenith-m.github.io/Savethekitten/)
 
 ---
 
@@ -217,7 +217,7 @@ The repository is configured for automatic continuous deployment using **GitHub 
 3. Under **Build and deployment** → **Source**, select **GitHub Actions**.
 4. Push your changes to the `main` branch.
 5. GitHub Actions will run tests, build the site, and publish the bundle to:
-   **[https://Sreenith-M.github.io/Savethekitten/](https://sreenith-m.github.io/Savethekitten/)**
+   **[https://sreenith-m.github.io/Savethekitten/](https://sreenith-m.github.io/Savethekitten/)**
 
 ---
 
